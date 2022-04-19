@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "ViewDataUsage";
+}
+
+<h2>
+
+    ViewData degerimiz => @ViewData["anahtar"]
+
+
+    @((ViewData["urun"] as Product).Name)
+
+</h2>
+
+
+<ul>
+
+    @foreach (Product item in ViewData["urunler"] as List<Product>)
+    {
+
+    }
+</ul>
